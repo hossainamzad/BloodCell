@@ -1,0 +1,39 @@
+
+<% Bloodtype.all.each do |bt| %>
+	
+	<%= button_to bt.group, bloodtype_path(bt), method: :get, :class =>"button" %>
+
+<% end %>
+
+<br>
+
+<!-- 	<div class="add-a-new-donor">
+		<%=link_to "Add a new donor", new_donor_path %>
+	</div> -->
+
+		<!-- <div class="edit-a-donor">
+		<h3>Edit a Donor Here: </h3>
+		< % =link_to "Edit a donor", edit_donor_path(@donor) % >
+	</div> -->
+
+
+<!-- <div class="modal-wrapper"> -->
+	<div class="modal">
+		<header class="modal-header">
+			List of Donors
+		</header>
+		<div class="modal-content">
+			<header class="modal-title">
+				
+			</header>
+			Jason A+ 2345677888
+			Jason A+ 2345677888
+			Jason A+ 2345677888
+			Jason A+ 2345677888
+			Jason A+ 2345677888
+			Jason A+ 2345677888
+			Jason A+ 2345677888
+			Jason A+ 2345677888
+		</div>
+	</div>
+<!-- </div> -->

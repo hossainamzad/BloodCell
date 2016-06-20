@@ -1,0 +1,11 @@
+<%= form_for @user do |f|%>
+	<%= f.label :username %>
+	<%= f.text_field :username %>
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+	<%= f.submit :update %>
+
+<% end %>
+
+
+<p><%= link_to "Delete User", @user, method: :delete %></p>

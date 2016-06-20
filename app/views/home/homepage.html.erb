@@ -1,0 +1,25 @@
+<div class="wrapper">
+	<h1>BloodCell</h1>
+		<div class="login-form">
+			<h3 class="login">Log In</h3>
+
+			<%= form_tag log_in_path do %> 
+			<%= label_tag :username %>
+			<%= text_field_tag :username, :class => "username" %>
+			</br></br>
+
+			<%= label_tag :password %>
+			<%= text_field_tag :password, :class => "password"%>
+			</br></br>
+
+			<%= submit_tag value="Log In", :class => "submit" %>
+
+			<% end %>
+		</div>
+		<div class="signin">
+			<h3>New User: </h3>
+			<%=link_to "Sign up", new_user_path %>
+		</div>
+	</div>
+</div>	
+

@@ -1,0 +1,12 @@
+<h3>Bloodtypes: <%= @bloodtype.group %></h3>
+<% @donor.each do |donor|%>
+	<div class="donor">
+		<h4>Name: <%= link_to donor.name, donor_path(donor) %></h4>
+		<!-- <p>Email: <%= donor.email %></p>
+		<p>Phone: <%= donor.phone %></p>
+		<p>Ready: <%= donor.ready %></p>
+		<p>Availability: <%= donor.availability %></p>
+		<p>Bloodtype_id: <%= donor.bloodtype_id %></p>
+		<p>Number of times of Donation: <%= donor.counter %></p> -->
+	</div>
+<% end %>
