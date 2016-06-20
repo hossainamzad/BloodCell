@@ -1,11 +1,12 @@
+<div class="main">
+	<% Bloodtype.all.each do |bt| %>
+		
+		<%= button_to bt.group, bloodtype_path(bt), method: :get, :class =>"button" %>
 
-<% Bloodtype.all.each do |bt| %>
-	
-	<%= button_to bt.group, bloodtype_path(bt), method: :get, :class =>"button" %>
+	<% end %>
 
-<% end %>
-
-<br>
+	<br>
+</div>
 
 <!-- 	<div class="add-a-new-donor">
 		<%=link_to "Add a new donor", new_donor_path %>

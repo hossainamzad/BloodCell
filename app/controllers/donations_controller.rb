@@ -14,11 +14,13 @@ class DonationsController < ApplicationController
   	@donation.save
   	if @donation.save
       flash[:notice] = "Donation is created"
+
     else
       flash[:alert] = "There was a problem. please, try again."
     end
-    redirect_to donors_path
-    # redirect_to donor_path(@donor)
+    # redirect_to donors_path
+    redirect_to :back
+    
 
   end
 

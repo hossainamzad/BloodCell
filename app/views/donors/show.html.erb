@@ -1,14 +1,15 @@
-<h3>Name: <%= @donor.name %></h3>
-<h4>Email: <%= @donor.email %></h4>
-<h4>Phone: <%= @donor.phone %></h4>
+<div class="show">
+	<h3>Name: <%= @donor.name %></h3>
+	<h4>Email: <%= @donor.email %></h4>
+	<h4>Phone: <%= @donor.phone %></h4>
 
-<h4>Available for the next Donation: <% if @donor.ready == nil %> Now <% else %><%= @donor.ready + 4.months %><% end %></h4>
-<h4 >Bloodtype: <%= @bloodtype.group %></h4>
-<h4 >Number of times of donation: <%= @donor.donations.count %></h4>
-<%= form_for @donation do |f|%>
-	<%= f.hidden_field :donor_id, value: @donor.id %>
-	<%= f.submit "donate today" %>
-<% end %>
-<p><%= link_to "Edit Donor", edit_donor_path(@donor) %></p>
-<p><%= link_to "Delete Donor", @donor, method: :delete, data: { confirm: "Are you sure?" } %></p>
-
+	<h4>Available for the next Donation: <% if @donor.ready == nil %> Now <% else %><%= @donor.ready + 4.months %><% end %></h4>
+	<h4 >Bloodtype: <%= @bloodtype.group %></h4>
+	<h4 >Number of times of donation: <%= @donor.donations.count %></h4>
+	<%= form_for @donation do |f|%>
+		<%= f.hidden_field :donor_id, value: @donor.id %>
+		<%= f.submit "donate today" %>
+	<% end %>
+	<p><%= link_to "Edit Donor", edit_donor_path(@donor) %></p>
+	<p><%= link_to "Delete Donor", @donor, method: :delete, data: { confirm: "Are you sure?" } %></p>
+</div>
