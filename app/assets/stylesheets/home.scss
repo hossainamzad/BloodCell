@@ -4,27 +4,56 @@
 // *{
 // 	margin:0 auto;
 // }
-
-.wrapper{
-	// background-color:red;
-	margin:0 auto;
-	height:900px;
-	width:900px;
-	text-align: center;
+body{
+	// background-color:white;
+	font-family:verdana;
 
 }
-.login-form{
-	background-color:green;
+div.wrapper{
+	// background-color:red;
+	margin:0 auto;
+	// height:900px;
+	width:400px;
+	text-align: center;
+	background-color: #F2635F;
+	border: 1 px solid black;
+
+}
+.header{
+
+}
+
+#blood{
+	color: red;
+	// background-color:white;
+	text-color: balck;
+}
+#cell{
+	color: white;
+}
+.username {
+	color: green;
+}
+input[type=text][type=submit] {
+	width: 20%;
+	padding:5px;
+	margin:3px;
+	border-radius: 3px;
+
+	// color: black;
+	// will change the color of the text inside the box.
 
 }
 .login{
 	color: white;
 }
-.username{
-	color: yellow;
-}
-.password{
+
+.password input {
 	color: green;
+}
+
+.signin{
+
 }
 
 .modal{

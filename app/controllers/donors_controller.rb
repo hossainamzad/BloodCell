@@ -10,6 +10,7 @@ class DonorsController < ApplicationController
   def show
   	@donor = Donor.find(params[:id])
     @bloodtype = Bloodtype.where(id: @donor.bloodtype_id).first
+    @donation = Donation.new
     # @donation =Donation.where(donors_id: params[:id])
     # @donation = Donation.length
   end

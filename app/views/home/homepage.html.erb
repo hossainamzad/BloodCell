@@ -1,14 +1,16 @@
 <div class="wrapper">
-	<h1>BloodCell</h1>
+	<h1 class="header"><span id="blood">Blood</span><span id="cell">Cell</span></h1>
 		<div class="login-form">
 			<h3 class="login">Log In</h3>
 
 			<%= form_tag log_in_path do %> 
 			<%= label_tag :username %>
+			<br>
 			<%= text_field_tag :username, :class => "username" %>
 			</br></br>
 
 			<%= label_tag :password %>
+			<br>
 			<%= text_field_tag :password, :class => "password"%>
 			</br></br>
 

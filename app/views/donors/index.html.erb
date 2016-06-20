@@ -1,10 +1,10 @@
 
-<h3>All current donors: </h3>
+<h3 class="current">All current donors: </h3>
 <table>
 	<tr>
-		<th>Name of the donor: </th>
+		<th class="donor">Name of the donor: </th>
 	</tr>
-	<% @donors.each do |x|%>
+	<% @donors.each do |x| %>
 		<% if x.ready == nil || x.ready < Time.now - 4.months %>  
 
 		<!-- if x.ready + 3.5 months < current date -->
