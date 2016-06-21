@@ -10,11 +10,50 @@
 
 }
 
-.show{
+.wrapper{
 	margin:0 auto;
 	// height:500px;
 	width:600px;
 	text-align: center;
 	background-color: #F2635F;
 	border: 1 px solid black;
+}
+
+.show-donor{
+	margin: 0 auto;
+	// height:600px;
+	width:422px;
+	background-color: white;
+	border: 1 px solid black;
+	border-radius: 10px;
+	margin-top: 2%;
+	padding: 10px;
+	text-align: center;
+
+}
+
+.edit-donor{
+	margin: 0 auto;
+	// height:600px;
+	width:422px;
+	background-color: white;
+	border: 1 px solid black;
+	border-radius: 10px;
+	margin-top: 2%;
+	padding: 10px;
+	text-align: center;
+
+}
+
+.index-donor{
+	margin: 0 auto;
+	// height:600px;
+	width:422px;
+	background-color: white;
+	border: 1 px solid black;
+	border-radius: 10px;
+	margin-top: 2%;
+	padding: 10px;
+	text-align: center;
+
 }

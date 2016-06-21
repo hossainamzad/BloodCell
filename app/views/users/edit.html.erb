@@ -1,11 +1,18 @@
-<%= form_for @user do |f|%>
-	<%= f.label :username %>
-	<%= f.text_field :username %>
-	<%= f.label :password %>
-	<%= f.password_field :password %>
-	<%= f.submit :update %>
+<div class="wrapper">
+	<%= form_for @user do |f|%>
+		<%= f.label :username %>
+		<br>
+		<%= f.text_field :username %>
+		<br>
+		<%= f.label :password %>
+		<br>
+		<%= f.password_field :password %>
+		<br>
 
-<% end %>
+		<%= f.submit :update %>
+
+	<% end %>
 
 
-<p><%= link_to "Delete User", @user, method: :delete %></p>
+	<p><%= link_to "Delete User", @user, method: :delete %></p>
+</div>

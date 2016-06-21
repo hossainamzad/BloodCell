@@ -1,25 +1,26 @@
-
-<h3 class="current">All current donors: </h3>
-<table>
-	<tr>
-		<th class="donor">Name of the donor: </th>
-	</tr>
-	<% @donors.each do |x| %>
-		<% if x.ready == nil || x.ready < Time.now - 4.months %>  
-
-		<!-- if x.ready + 3.5 months < current date -->
+<div class="index-donor">
+	<h3 class="current">All current donors: </h3>
+	<table>
 		<tr>
-			<td><%= x.name %></td>
-			<!-- <td><%= x.ready %></td>
-			<td><%= x.bloodtype_id %></td> -->
-			<td><%= link_to "Show", donor_path(x) %></td>
-			<td><%= link_to "Edit", edit_donor_path(x) %></td>
-			<td><%= link_to "Delete", donor_path(x) %></td>
+			<th class="donor">Name of the donor: </th>
 		</tr>
-			<p></p>
-			<!-- <p><%= link_to "Show Donor", donor_path(x) %></p> -->
-		
-		<% end %>
-	<% end %> 
-</table>
+		<% @donors.each do |x| %>
+			<% if x.ready == nil || x.ready < Time.now - 4.months %>  
+
+			<!-- if x.ready + 3.5 months < current date -->
+			<tr>
+				<td><%= x.name %></td>
+				<!-- <td><%= x.ready %></td>
+				<td><%= x.bloodtype_id %></td> -->
+				<td><%= link_to "Show", donor_path(x) %></td>
+				<td><%= link_to "Edit", edit_donor_path(x) %></td>
+				<td><%= link_to "Delete", donor_path(x) %></td>
+			</tr>
+				<p></p>
+				<!-- <p><%= link_to "Show Donor", donor_path(x) %></p> -->
+			
+			<% end %>
+		<% end %> 
+	</table>
+</div>
 

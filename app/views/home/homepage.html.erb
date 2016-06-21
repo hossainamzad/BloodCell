@@ -1,27 +1,29 @@
-<div class="wrapper">
-	<h1 class="header"><span id="blood">Blood</span><span id="cell">Cell</span></h1>
-		<div class="login-form">
-			<h3 class="login">Log In</h3>
+<!-- <div class="big-wrapper"> -->
+	<div class="wrapper">
+		<h1 class="header"><span id="blood">Blood</span><span id="cell">Cell</span></h1>
+			<div class="login-form">
+				<h3 class="login">Log In</h3>
 
-			<%= form_tag log_in_path do %> 
-			<%= label_tag :username %>
-			<br>
-			<%= text_field_tag :username, :class => "username" %>
-			</br></br>
+				<%= form_tag log_in_path do %> 
+				<%= label_tag :username %>
+				<br>
+				<%= text_field_tag :username %>
+				</br></br>
 
-			<%= label_tag :password %>
-			<br>
-			<%= text_field_tag :password, :class => "password"%>
-			</br></br>
+				<%= label_tag :password %>
+				<br>
+				<%= text_field_tag :password %>
+				</br></br>
 
-			<%= submit_tag value="Log In", :class => "submit" %>
+				<%= submit_tag value="Log In" %>
 
-			<% end %>
+				<% end %>
+			</div>
+			<div class="signin">
+				<h3>New User: </h3>
+				<%=link_to "Sign up", new_user_path %>
+			</div>
 		</div>
-		<div class="signin">
-			<h3>New User: </h3>
-			<%=link_to "Sign up", new_user_path %>
-		</div>
-	</div>
-</div>	
+	</div>	
+<!-- </div> -->
 

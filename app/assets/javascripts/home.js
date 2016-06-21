@@ -8,3 +8,9 @@ $(document).ready(function(){
 	})
 
 });
+
+$(document).ready(function(){
+
+	$(".notice").fadeOut(3000);
+		// $(this).remove();
+});
