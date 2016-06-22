@@ -7,6 +7,7 @@
 	<h4 >Bloodtype: <%= @bloodtype.group %></h4>
 	<h4 >Number of times of donation: <%= @donor.donations.count %></h4>
 	<%= form_for @donation do |f|%>
+		
 		<%= f.hidden_field :donor_id, value: @donor.id %>
 		<%= f.submit "donate today" %>
 	<% end %>
