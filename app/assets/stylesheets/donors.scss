@@ -1,59 +1,182 @@
 // Place all the styles related to the Donors controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.current{
-	font-family: sans-serif;
-	color: orange;
+@media all and (max-width: 480px){
+	.current{
+		font-family: sans-serif;
+		color: orange;
+	}
+	.donor{
+		font-family: sans-serif;
+
+	}
+
+	.wrapper{
+		margin:0 auto;
+		// height:500px;
+		width:600px;
+		text-align: center;
+		background-color: #F2635F;
+		border: 1 px solid black;
+	}
+
+	.show-donor{
+		margin: 0 auto;
+		// height:600px;
+		width:90%;
+		background-color: rgb(255, 204, 204);
+		border: 1 px solid black;
+		border-radius: 10px;
+		margin-top: 5%;
+		padding: 10px;
+		text-align: center;
+
+	}
+
+	.edit-donor{
+		margin: 0 auto;
+		// height:600px;
+		width:90%;
+		background-color: rgb(255, 204, 204);
+		border: 1 px solid black;
+		border-radius: 10px;
+		margin-top: 5%;
+		padding: 10px;
+		text-align: center;
+
+	}
+
+	.index-donor{
+		margin: 0 auto;
+		// height:600px;
+		width:90%;
+		background-color: rgb(255, 204, 204);
+		border: 1 px solid black;
+		border-radius: 10px;
+		margin-top: 5%;
+		padding: 10px;
+		text-align: center;
+
+	}
 }
-.donor{
-	font-family: sans-serif;
+// Place all the styles related to the Donors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@media all and (max-width: 768px) and (min-width: 481px){
+	.current{
+		font-family: sans-serif;
+		color: orange;
+	}
+	.donor{
+		font-family: sans-serif;
 
+	}
+
+	.wrapper{
+		margin:0 auto;
+		// height:500px;
+		width:600px;
+		text-align: center;
+		background-color: #F2635F;
+		border: 1 px solid black;
+	}
+
+	.show-donor{
+		margin: 0 auto;
+		// height:600px;
+		width:60%;
+		background-color: rgb(255, 153, 153);
+		border: 1 px solid black;
+		border-radius: 10px;
+		margin-top: 5%;
+		padding: 10px;
+		text-align: center;
+
+	}
+
+	.edit-donor{
+		margin: 0 auto;
+		// height:600px;
+		width:60%;
+		background-color: rgb(255, 153, 153);
+		border: 1 px solid black;
+		border-radius: 10px;
+		margin-top: 5%;
+		padding: 10px;
+		text-align: center;
+
+	}
+
+	.index-donor{
+		margin: 0 auto;
+		// height:600px;
+		width:60%;
+		background-color: rgb(255, 153, 153);
+		border: 1 px solid black;
+		border-radius: 10px;
+		margin-top: 5%;
+		padding: 10px;
+		text-align: center;
+
+	}
 }
 
-.wrapper{
-	margin:0 auto;
-	// height:500px;
-	width:600px;
-	text-align: center;
-	background-color: #F2635F;
-	border: 1 px solid black;
-}
 
-.show-donor{
-	margin: 0 auto;
-	// height:600px;
-	width:448px;
-	background-color: white;
-	border: 1 px solid black;
-	border-radius: 10px;
-	margin-top: 2%;
-	padding: 10px;
-	text-align: center;
+@media all and (min-width: 769px){
+	.current{
+		font-family: sans-serif;
+		color: orange;
+	}
+	.donor{
+		font-family: sans-serif;
 
-}
+	}
 
-.edit-donor{
-	margin: 0 auto;
-	// height:600px;
-	width:448px;
-	background-color: white;
-	border: 1 px solid black;
-	border-radius: 10px;
-	margin-top: 2%;
-	padding: 10px;
-	text-align: center;
+	.wrapper{
+		margin:0 auto;
+		// height:500px;
+		width:60%;
+		text-align: center;
+		background-color: #F2635F;
+		border: 1 px solid black;
+	}
 
-}
+	.show-donor{
+		margin: 0 auto;
+		// height:600px;
+		width:30%;
+		background-color: #F2635F;
+		border: 1 px solid black;
+		border-radius: 10px;
+		margin-top: 5%;
+		padding: 10px;
+		text-align: center;
 
-.index-donor{
-	margin: 0 auto;
-	// height:600px;
-	width:422px;
-	background-color: white;
-	border: 1 px solid black;
-	border-radius: 10px;
-	margin-top: 2%;
-	padding: 10px;
-	text-align: center;
+	}
 
+	.edit-donor{
+		margin: 0 auto;
+		// height:600px;
+		width:30%;
+		background-color: #F2635F;
+		border: 1 px solid black;
+		border-radius: 10px;
+		margin-top: 5%;
+		padding: 10px;
+		text-align: center;
+
+	}
+
+	.index-donor{
+		margin: 0 auto;
+		// height:600px;
+		width:30%;
+		background-color: #F2635F;
+		border: 1 px solid black;
+		border-radius: 10px;
+		margin-top: 5%;
+		padding: 10px;
+		text-align: center;
+
+	}
 }

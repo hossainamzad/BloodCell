@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160619173424) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "bloodtypes", force: :cascade do |t|
     t.string   "group"
     t.datetime "created_at", null: false

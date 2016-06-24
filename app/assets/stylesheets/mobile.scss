@@ -1,136 +1,141 @@
-// @media all and (max-width: 480px){
-// 		body{
-// 		background-color:#2B80B9;
-// 	}
+@media all and (max-width: 480px){
+		body{
+		// background-color:#2B80B9;
+		
+	}
 
-// 	.wrapper{
-// 		margin: 0 auto;
-// 		// height:600px;
-// 		width:350px;
-// 		background-color: #F2635F;
-// 		border: 1 px solid black;
-// 		border-radius: 10px;
-// 		margin-top: 8%;
-// 		padding: 10px;
-// 	}
+	div.wrapper{
+		// margin: 0 auto;
+		// height:600px;
+		width: 90%;
+		background-color: rgb(255, 204, 204);
+		// border: 1 px solid black;
+		border-radius: 10px;
+		margin-top: 8%;
+		padding: 10px;
+	}
 
-// 	#blood{
-// 		text-color: black;
-// 		font-family: verdana;
-// 	}
+	#blood{
+		text-color: black;
+		font-family: verdana;
+	}
 
-// 	#cell{
-// 		color: white;
-// 		font-family: arial;
-// 	}
-// 	#slogan{
-// 		margin-left: 50px;
-// 		// margin-bottom:5%;
-// 	}
-// 	#powered{
-// 		color: blue;
-// 		margin-left: 50px;
-// 	}
-// 	#badhan {
-// 		color: yellow;
-// 	}
+	#cell{
+		color: white;
+		font-family: arial;
+	}
+	#slogan{
+		margin-left: 50px;
+		// margin-bottom:5%;
+	}
+	#powered{
+		color: blue;
+		margin-left: 50px;
+	}
+	#badhan {
+		color: yellow;
+		font-family: tahoma;
+	}
 
-// 	input[type=text]{
-// 		width: 35%;
-// 		padding:5px;
-// 		margin:3px;
-// 		border-radius: 5px;
+	input[type=text]{
+		width: 35%;
+		padding:5px;
+		margin:3px;
+		border-radius: 5px;
 
-// 		// color: black;
-// 		// will change the color of the text inside the box.
-// 	}
+		// color: black;
+		// will change the color of the text inside the box.
+	}
 
-// 	input[type=submit]{
-// 		width: 35%;
-// 		// padding:5px;
-// 		// margin:3px;
-// 		border-radius: 5px;
+	input[type=submit]{
+		width: 35%;
+		// padding:5px;
+		// margin:3px;
+		border-radius: 5px;
 
-// 		// color: black;
-// 		// will change the color of the text inside the box.
-// 	}
+		// color: black;
+		// will change the color of the text inside the box.
+	}
 
-// 	.login{
-// 		color: white;
-// 	}
+	.login{
+		color: white;
+	}
 
-// 	.button-login{
-// 	  color: black;
-// 	  width: 130px;
-// 	  cursor: position;
-// 	  border-radius: 6px;
-// 	  height: 50px;
-// 	  /*add any other properties you want to style*/
-// 	}
-// 	.button:hover {
-// 	    background-color: #008CBA;
-// 	    color: white;
-// 	}
-// 	#link-tag a{
-// 		color: white;
-// 		font-family: arial;
-// 	}
+	.button-login{
+	  color: black;
+	  width: 130px;
+	  cursor: position;
+	  border-radius: 6px;
+	  height: 50px;
+	  /*add any other properties you want to style*/
+	}
+	.button:hover {
+	    background-color: #008CBA;
+	    color: white;
+	}
+	#link-tag a{
+		color: white;
+		font-family: arial;
+		text-decoration: none;
+	}
 
-// 	// .password input {
-// 	// 	color: green;
-// 	// }
+	// .password input {
+	// 	color: green;
+	// }
 
-// 	.main{
-// 		margin:0 auto;
-// 		// height:500px;
-// 		width:39%;
-// 		text-align: center;
-// 		background-color: #F2635F;
-// 		border: 1 px solid black;
-// 		border-radius: 6px;
-// 		// text-align: center;
-// 		// display: ;
-// 	}
+	.main{
+		margin:0 auto;
+		// height:500px;
+		margin-top: 4%;
+		width:90%;
+		text-align: center;
+		background-color: rgb(255, 204, 204);
+		border: 1 px solid black;
+		border-radius: 6px;
+		padding: 10px;
+		// text-align: center;
+		// display: ;
+	}
 
-// 	.modal{
+	.modal{
 
-// 		// height: 300px;
-// 		width: 300px;
-// 		background-color:black;
-// 		margin: 0 auto;
-// 		position: relative;
-// 		top: 50%;
-// 		transform: translateY(-50%);
-// 		display: none;
-
-
-// 	}
-// 	.modal-header{
-// 		padding:10px;
-// 		text-align:center;
-// 		border-bottom: 1px solid grey;
-// 		color:green;
-
-// 	}
-// 	.modal-content{
-// 		color: yellow;
-// 		// padding:10px;
-// 		// overflow: scroll;
-// 		text-align:center;
+		// height: 300px;
+		width: 300px;
+		background-color:black;
+		margin: 0 auto;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		display: none;
 
 
-// 	}
-// 	.modal-content{
-// 	}
+	}
+	.modal-header{
+		padding:10px;
+		text-align:center;
+		border-bottom: 1px solid grey;
+		color:green;
 
-// 	.button{
-// 		padding:3px;
-// 		margin-top: 10px;
-// 		// display:block;
-
-// 	}
-
-
+	}
+	.modal-content{
+		color: yellow;
+		// padding:10px;
+		// overflow: scroll;
+		text-align:center;
 
 
-// }
+	}
+	.modal-content{
+	}
+
+	.button{
+		padding:3px;
+		margin-top: 10px;
+		// display:block;
+
+	}
+
+
+
+
+}

@@ -1,23 +1,105 @@
-.page{
-	// margin: 0 auto;
-	// background-color: #00BAF5;
-	// width: 600px;
-	// text-align: center;
-	// border: 1 px solid black;
-	margin:0 auto;
-	// height:500px;
-	margin-top: 20px;
-	width:41%;
-	text-align: center;
-	background-color: #F2635F;
-	border: 1 px solid black;
-	border-radius: 6px;
-	padding: 3px;
+@media all and (max-width: 480px){
+	.page{
+		// margin: 0 auto;
+		// background-color: #00BAF5;
+		// width: 600px;
+		// text-align: center;
+		// border: 1 px solid black;
+		margin:0 auto;
+		// height:500px;
+		margin-top: 20px;
+		width:90%;
+		text-align: center;
+		background-color: rgb(255, 204, 204);
+		border: 1 px solid black;
+		border-radius: 6px;
+		padding: 3px;
+	}
+	.group{
+		color: #450CFC;
+	}
+	.donor{
+		color:black;
+		// font-style: arial;
+	}
 }
-.group{
-	color: #450CFC;
+
+@media all and (max-width: 768px) and (min-width: 481px) {
+
+	.page{
+		// margin: 0 auto;
+		// background-color: #00BAF5;
+		// width: 600px;
+		// text-align: center;
+		// border: 1 px solid black;
+		margin:0 auto;
+		// height:500px;
+		margin-top: 20px;
+		width:60%;
+		text-align: center;
+		background-color: rgb(255, 153, 153);
+		border: 1 px solid black;
+		border-radius: 6px;
+		padding: 3px;
+	}
+	.group{
+		color: #450CFC;
+	}
+	.donor{
+		color:black;
+		// font-style: arial;
+	}
 }
-.donor{
-	color:black;
-	// font-style: arial;
+
+
+@media all and (min-width: 769px) {
+
+	.page{
+		// margin: 0 auto;
+		// background-color: #00BAF5;
+		// width: 600px;
+		// text-align: center;
+		// border: 1 px solid black;
+		margin:0 auto;
+		// height:500px;
+		margin-top: 20px;
+		width:40%;
+		text-align: center;
+		background-color: #F2635F;
+		border: 1 px solid black;
+		border-radius: 6px;
+		padding: 3px;
+	}
+	.group{
+		color: #450CFC;
+	}
+	.donor{
+		color:black;
+		// font-style: arial;
+	}
 }
+// @media all and (max-width: 480px){
+// 	.page{
+// 		// margin: 0 auto;
+// 		// background-color: #00BAF5;
+// 		// width: 600px;
+// 		// text-align: center;
+// 		// border: 1 px solid black;
+// 		margin:0 auto;
+// 		// height:500px;
+// 		margin-top: 20px;
+// 		width:41%;
+// 		text-align: center;
+// 		background-color: #F2635F;
+// 		border: 1 px solid black;
+// 		border-radius: 6px;
+// 		padding: 3px;
+// 	}
+// 	.group{
+// 		color: #450CFC;
+// 	}
+// 	.donor{
+// 		color:black;
+// 		// font-style: arial;
+// 	}
+// }
