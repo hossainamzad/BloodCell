@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 	def index
-		@users = User.all
+		@users = User.all.reverse
 	end
 
   def show
@@ -9,6 +9,8 @@ class UsersController < ApplicationController
   end
 
 	def new
+    @disable_nav = true
+
 		@user = User.new
 	end
 
