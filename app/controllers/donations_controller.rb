@@ -10,11 +10,15 @@ class DonationsController < ApplicationController
   end
 
   def create
+    # @donor = Donor.find(params[:id])
   	@donation = Donation.new(donation_params)
   	@donation.save
   	if @donation.save
       flash[:notice] = "Donation is created"
-
+      # @donor = Donor.where(id: @donation.donor_id)
+      # puts @donor
+      # # puts ">>>>>>>>>>>>" + @donor.ready
+      # @donor.update(ready: Time.now)
     else
       flash[:alert] = "There was a problem. please, try again."
     end
