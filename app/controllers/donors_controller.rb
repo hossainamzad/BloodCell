@@ -3,7 +3,7 @@ class DonorsController < ApplicationController
   	if params[:search]
 	  	@donors = Donor.search(params[:search])
 	  else
-	  	@donors = Donor.all
+	  	@donors = Donor.all.reverse
 	  end
   end
 

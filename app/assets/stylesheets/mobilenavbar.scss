@@ -1,4 +1,4 @@
-@media all and (min-width: 768px){
+@media all and (min-width: 769px){
     .navbar{
         // margin:60px;
         // height:500px;
@@ -8,6 +8,7 @@
         // border: 1 px solid black;
         position: relative;
         display: inline-block;
+        margin-top: 40px;
     }
 
     .navbar ul{
@@ -41,7 +42,7 @@
 }
 
 
-@media all and (max-width: 767px) and (min-width: 481px){
+@media all and (max-width: 768px) and (min-width: 481px){
     .navbar{
         // margin:60px;
         // height:500px;

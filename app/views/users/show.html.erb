@@ -1,8 +1,8 @@
 <div class="wrapper">
 	Username : <%= @user.username %>
-	<br>
+	<br><br>
 	<%= link_to "Edit User",edit_user_path(@user) %>
 
-	<br>
+	<br><br>
 	<%= link_to "Delete User", @user, method: :delete, data: { confirm: "Are you sure?" } %>
 </div>

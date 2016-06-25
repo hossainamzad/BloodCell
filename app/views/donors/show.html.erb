@@ -11,6 +11,6 @@
 		<%= f.hidden_field :donor_id, value: @donor.id %>
 		<%= f.submit "donate today" %>
 	<% end %>
-	<p><%= link_to "Edit Donor", edit_donor_path(@donor) %></p>
-	<p><%= link_to "Delete Donor", @donor, method: :delete, data: { confirm: "Are you sure?" } %></p>
+	<p><span id="link-tag"><%= link_to "Edit Donor", edit_donor_path(@donor) %></span></p>
+	<p><span id="link-tag"><%= link_to "Delete Donor", @donor, method: :delete, data: { confirm: "Are you sure?" } %></span></p>
 </div>

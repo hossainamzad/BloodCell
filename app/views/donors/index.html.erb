@@ -12,9 +12,9 @@
 				<td><%= x.name %></td>
 				<!-- <td><%= x.ready %></td>
 				<td><%= x.bloodtype_id %></td> -->
-				<td><%= link_to "Show", donor_path(x) %></td>
-				<td><%= link_to "Edit", edit_donor_path(x) %></td>
-				<td><%= link_to "Delete", donor_path(x) %></td>
+				<td><span id="link-tag"><%= link_to "Show", donor_path(x) %></span></td>
+				<td><span id="link-tag"><%= link_to "Edit", edit_donor_path(x) %></span></td>
+				<td><span id="link-tag"><%= link_to "Delete", donor_path(x) %></span></td>
 			</tr>
 				<!-- <p><%= link_to "Show Donor", donor_path(x) %></p> -->			
 			<% end %>

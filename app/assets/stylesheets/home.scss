@@ -6,7 +6,6 @@
 // }
 @media all and (min-width: 769px){
 	
-	}
 	body{
 		// background-image{
 		// width: 100%;
@@ -15,13 +14,13 @@
 	}
 
 	div.wrapper{
-		margin: 0 auto;
-		// height:600px;
+		// margin: 0 auto;
+		// height:500px;
 		width:30%;
 		background-color: #F2635F;
-		border: 1 px solid black;
+		// border: 1 px solid black;
 		border-radius: 10px;
-		margin-top: 8%;
+		margin-top: 40%;
 		padding: 10px;
 	}
 
@@ -34,14 +33,17 @@
 		color: white;
 		font-family: arial;
 	}
+
 	#slogan{
 		margin-left: 30px;
 		// margin-bottom:5%;
 	}
+
 	#powered{
 		color: blue;
 		margin-left: 50px;
 	}
+
 	#badhan {
 		color: yellow;
 	}
@@ -92,9 +94,10 @@
 	//     color: white;
 	// }
 	#link-tag a{
-		color: white;
+		color:#034f84;
 		font-family: arial;
 		text-decoration: none;
+		// font-weight: bold;
 	}
 
 	// .password input {
@@ -115,7 +118,6 @@
 	}
 
 	.modal{
-
 		// height: 300px;
 		width: 300px;
 		background-color:black;
@@ -124,24 +126,23 @@
 		top: 50%;
 		transform: translateY(-50%);
 		display: none;
-
-
 	}
+
 	.modal-header{
 		padding:10px;
 		text-align:center;
 		border-bottom: 1px solid grey;
 		color:green;
-
 	}
+
 	.modal-content{
 		color: yellow;
 		// padding:10px;
 		// overflow: scroll;
 		text-align:center;
 
-
 	}
+
 	.modal-content{
 	}
 
@@ -150,3 +151,4 @@
 		margin-top: 10px;
 		// display:block;
 	}
+}

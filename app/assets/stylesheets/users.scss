@@ -1,12 +1,12 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@media all and (min-width: 768px){
-	.wrapper{
+@media all and (min-width: 769px){
+	div.wrapper{
 		margin:0 auto;
 		// height:500px;
-		margin-top: 20px;
-		width:90%;
+		margin-top: 5%;
+		width:30%;
 		text-align: center;
 		background-color: #F2635F;
 		border: 1 px solid black;
@@ -37,18 +37,36 @@
 
 	.form{
 		margin: 0 auto;
-		height:300px;
+		height:370px;
 		width:380px;
 		background-color: #F2635F;
 		border: 1 px solid black;
 		border-radius: 10px;
-		margin-top: 5%;
+		margin-top: 10%;
 		padding: 10px;
 	}
+
+	#blood-new-user{
+		text-color: black;
+		font-family: verdana;
+		margin-left: 30%;
+	}
+
+	#cell-new-user{
+		color: white;
+		font-family: arial;
+	}
+	.new-user{
+		margin-left: 38%;
+		font-family: tahoma;
+		color: white;
+
+	}
+
 	.input{
 		text-align: center;
 		padding: 10px;
-		margin-top: 20%;
+		margin-top: 5%;
 	}
 
 
