@@ -21,10 +21,13 @@ class UsersController < ApplicationController
     @user.save
     if @user.save
       flash[:notice] = "User is created"
+      redirect_to users_path
+
     else
-      flash[:alert] = "There was aproblem. please, try again."
+      flash[:alert] = "There was a problem. Please, try again."
+      redirect_to new_user_path
+
     end
-    redirect_to users_path
   end	
 
 	def edit

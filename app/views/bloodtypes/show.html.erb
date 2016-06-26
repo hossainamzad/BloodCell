@@ -3,7 +3,7 @@
 		<h3>Bloodtypes: <%= @bloodtype.group %></h3>
 			<% @donor.each do |donor|%>
 			<div class="donor">
-				<h4>Name: <%= link_to donor.name, donor_path(donor) %></h4>
+				<h4>Name: <span id="link-tag"><%= link_to donor.name, donor_path(donor) %></span></h4>
 				<!-- <p>Email: <%= donor.email %></p>
 				<p>Phone: <%= donor.phone %></p>
 				<p>Ready: <%= donor.ready %></p>

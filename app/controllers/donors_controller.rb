@@ -39,6 +39,7 @@ class DonorsController < ApplicationController
 
   def edit
   	@donor = Donor.find(params[:id])
+    @donor.save
   end
 
   def update

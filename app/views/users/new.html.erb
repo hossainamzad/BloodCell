@@ -3,13 +3,13 @@
 	<h3 class="new-user">NEW USER</h3>
 	<div class="input">
 	<%= form_for @user do |f|%>
-		<%= f.label :username %>
+		
+		
+		<%= f.text_field :username, placeholder: "User Name" %>
 		<br>
-		<%= f.text_field :username %>
+		
 		<br>
-		<%= f.label :password %>
-		<br>
-		<%= f.password_field :password %>
+		<%= f.password_field :password, placeholder: "Password" %>
 		<br><br>
 		<%= f.submit :submit%>
 

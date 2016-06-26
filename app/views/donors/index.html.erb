@@ -6,7 +6,7 @@
 		</tr>
 		<% @donors.each do |x| %>
 			<% if x.ready == nil || x.ready < Time.now - 4.months %>  
-
+			<!-- < % if x.ready == nil || x.ready == Time.now % >   -->
 			<!-- if x.ready + 3.5 months < current date -->
 			<tr>
 				<td><%= x.name %></td>
