@@ -13,6 +13,7 @@ class DonorsController < ApplicationController
     @donation = Donation.new
     @last_donation = Donation.where(donor_id: @donor).last
 
+
     # @donation =Donation.where(donors_id: params[:id])
     # @donation = Donation.length
   end

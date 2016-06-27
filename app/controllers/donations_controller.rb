@@ -14,6 +14,8 @@ class DonationsController < ApplicationController
   	@donation = Donation.new(donation_params)
   	@donation.save
   	if @donation.save
+      @donation.donor.ready = false
+      @donation.donor.save
       flash[:notice] = "Donation is created"
       # @donor = Donor.where(id: @donation.donor_id)
       # puts @donor
