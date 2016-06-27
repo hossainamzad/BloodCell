@@ -18,7 +18,7 @@
 		// height:500px;
 		width:30%;
 		background-color: #F2635F;
-		// border: 1 px solid black;
+		border: 3px solid black;
 		border-radius: 10px;
 		margin-top: 40%;
 		padding: 10px;
@@ -94,10 +94,14 @@
 	//     color: white;
 	// }
 	#link-tag a{
-		color:#034f84;
+		color:white;
 		font-family: arial;
 		text-decoration: none;
+
 		// font-weight: bold;
+	}
+	#link-tag a:hover{
+		color: RGBA(61, 61, 58, 1.00);
 	}
 
 	// .password input {
@@ -113,6 +117,8 @@
 		background-color: #F2635F;
 		border: 1 px solid black;
 		border-radius: 6px;
+		border: 3px solid black;
+
 		// text-align: center;
 		// display: ;
 	}

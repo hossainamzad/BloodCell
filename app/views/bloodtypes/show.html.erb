@@ -1,6 +1,6 @@
 <div class="page">
 	<div class="group">
-		<h3>Bloodtypes: <%= @bloodtype.group %></h3>
+		<h1 id="bloodtype">Bloodtypes: <%= @bloodtype.group %></h1>
 			<% @donor.each do |donor|%>
 			<div class="donor">
 				<h4>Name: <span id="link-tag"><%= link_to donor.name, donor_path(donor) %></span></h4>

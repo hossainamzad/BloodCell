@@ -66,15 +66,23 @@
 		width:32%;
 		text-align: center;
 		background-color: #F2635F;
-		border: 1 px solid black;
 		border-radius: 6px;
 		padding: 3px;
+		border: 3px solid black;
+
+	}
+	#bloodtype{
+		text-shadow: 2px 2px black;
+
 	}
 	.group{
-		color: #450CFC;
+		color: white;
+
 	}
 	.donor{
-		color:black;
+		color:white;
+		text-shadow: 2px 2px black;
+		
 		// font-style: arial;
 	}
 }
