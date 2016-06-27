@@ -3,7 +3,13 @@
 	<h4>Email: <%= @donor.email %></h4>
 	<h4>Phone: <%= @donor.phone %></h4>
 
-	<h4>Available for the next Donation: <% if @donor.ready == nil %> Now <% else %><%= @donor.ready + 4.months %><% end %></h4>
+	<h4>Available for the next Donation:
+		<% if @last_donation == nil || @last_donation.created_at + 4.months == Time.now.strftime("%m/%d/%Y")  %>
+			Now
+		<% else %>
+			<%= (@last_donation.created_at + 4.months).strftime("%m/%d/%Y") %>
+		<% end %>
+	</h4>
 	<h4 >Bloodtype: <%= @bloodtype.group %></h4>
 	<h4 >Number of times of donation: <%= @donor.donations.count %></h4>
 <!-- 	<%= form_for @donation do |f|%>
@@ -15,14 +21,11 @@
 
 
 	<% if @last_donation == nil || @last_donation.created_at + 4.months == Time.now %>
-	<%= form_for @donation do |f|%>
-		<%= f.hidden_field :donor_id, value: @donor.id %>
+		<%= form_for @donation do |f|%>
+			<%= f.hidden_field :donor_id, value: @donor.id %>
 
-		<%= f.submit "donate today" %>
-	<% end %>
-	<% else %>
-	User eligible for donation on
-			<%= @last_donation.created_at + 4.months %>
+			<%= f.submit "donate today" %>
+		<% end %>
 	<% end %>
 
 

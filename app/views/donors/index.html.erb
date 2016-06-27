@@ -5,18 +5,29 @@
 			<th class="donor">Name of the donor: </th>
 		</tr>
 		<% @donors.each do |x| %>
-			<% if x.ready == nil || x.ready < Time.now - 4.months %>  
-			<!-- < % if x.ready == nil || x.ready == Time.now % >   -->
-			<!-- if x.ready + 3.5 months < current date -->
-			<tr>
-				<td><%= x.name %></td>
-				<!-- <td><%= x.ready %></td>
-				<td><%= x.bloodtype_id %></td> -->
-				<td><span id="link-tag"><%= link_to "Show", donor_path(x) %></span></td>
-				<td><span id="link-tag"><%= link_to "Edit", edit_donor_path(x) %></span></td>
-				<td><span id="link-tag"><%= link_to "Delete", donor_path(x) %></span></td>
-			</tr>
-				<!-- <p><%= link_to "Show Donor", donor_path(x) %></p> -->			
+			<% if x.donations.count > 0 %>
+				<% if x.ready == nil || x.donations.last.created_at < Time.now - 4.months %>  
+		<!-- 		< % if x.ready == nil || x.ready == Time.now % >  --> 
+				<!-- if x.ready + 3.5 months < current date -->
+				<tr>
+					<td><%= x.name %></td>
+					<!-- <td><%= x.ready %></td>
+					<td><%= x.bloodtype_id %></td> -->
+					<td><span id="link-tag"><%= link_to "Show", donor_path(x) %></span></td>
+					<td><span id="link-tag"><%= link_to "Edit", edit_donor_path(x) %></span></td>
+					<td><span id="link-tag"><%= link_to "Delete", donor_path(x) %></span></td>
+				</tr>
+					<!-- <p><%= link_to "Show Donor", donor_path(x) %></p> -->			
+				<% end %>
+			<% else %>
+				<tr>
+					<td><%= x.name %></td>
+					<!-- <td><%= x.ready %></td>
+					<td><%= x.bloodtype_id %></td> -->
+					<td><span id="link-tag"><%= link_to "Show", donor_path(x) %></span></td>
+					<td><span id="link-tag"><%= link_to "Edit", edit_donor_path(x) %></span></td>
+					<td><span id="link-tag"><%= link_to "Delete", donor_path(x) %></span></td>
+				</tr>
 			<% end %>
 		<% end %> 
 	</table>
