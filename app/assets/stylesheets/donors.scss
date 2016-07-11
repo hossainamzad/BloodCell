@@ -91,7 +91,6 @@
 		margin-top: 5%;
 		padding: 10px;
 		text-align: center;
-
 	}
 
 	.edit-donor{
@@ -128,7 +127,9 @@
 		color: white;
 	}
 	.donor{
-		font-family: sans-serif;
+		font-family: Arial;
+		font-size: 18px;
+		font-weight: 20px;
 
 	}
 
@@ -153,8 +154,14 @@
 		margin-top: 5%;
 		padding: 10px;
 		text-align: center;
+		
+	// #nam,#em, #cell {
+	// 	text-color:white;
+	// 	// text-shadow: 2px 2px black;
 
+	// }
 	}
+
 
 	.edit-donor{
 		margin: 0 auto;

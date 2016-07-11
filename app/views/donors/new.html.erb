@@ -2,19 +2,19 @@
   <h2>Add a New Donor:</h2>
 
   <%= form_for @donor do |f| %>
-    <%= f.label :name %>:
+    <%= f.label :name, :style => "color: white; font-family: impact;" %>
     <%= f.text_field :name %><br /><br>
 
-    <%= f.label :email %>:
-    <%= f.text_field :email %><br /><br>
+    <%= f.label :email, :style => "color: Yellow; font-family:Impact;" %>
+    <%= f.text_field :email, :style => "color: white;" %><br /><br>
 
-    <%= f.label :phone %>:
+    <%= f.label :phone, :style => "color: Black;font-family:Impact;" %>
     <%= f.text_field :phone %><br /><br>
 
-    <%= f.label :ready %>:
+    <%= f.label :ready, :style => "color: Blue;font-family:Impact;" %>
     <%= f.date_field :ready %><br /><br>
 
-    <%= f.label :bloodtype %>:
+    <%= f.label :bloodtype, :style => "color: Cyan;font-family:Impact;" %>
     <%= f.collection_select(:bloodtype_id, Bloodtype.all, :id, :group )%><br /><br>
 
     <%= f.submit :submit %>
